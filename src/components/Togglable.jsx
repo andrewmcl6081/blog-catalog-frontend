@@ -9,10 +9,6 @@ const Togglable = forwardRef((props, refs) => {
   const hideWhenVisible = { display: visible ? 'none' : '' }
   const showWhenVisible = { display: visible ? '' : 'none' }
 
-  Togglable.propTypes = {
-    buttonLabel: PropTypes.string.isRequired
-  }
-
   const toggleVisibility = () => {
     setVisible(!visible)
   }
@@ -24,6 +20,12 @@ const Togglable = forwardRef((props, refs) => {
       toggleVisibility
     }
   })
+
+  Togglable.propTypes = {
+    buttonLabel: PropTypes.string.isRequired
+  }
+
+  Togglable.displayName = 'Togglable'
 
   return (
     <div>

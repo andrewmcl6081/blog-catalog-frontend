@@ -90,7 +90,7 @@ const App = () => {
                      handlePasswordChange={handlePasswordChange}
                      handleLogin={handleLogin}
                      username={username}
-                     password={password} 
+                     password={password}
            />
         </Togglable>
       }
