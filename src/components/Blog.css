@@ -1,0 +1,23 @@
+.blog-list {
+  padding-top: 10px;
+  padding-left: 2px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.delete-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 7px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #e73535 0%, #eb2626 100%);
+  background-origin: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
