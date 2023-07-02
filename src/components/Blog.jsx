@@ -1,6 +1,6 @@
-import { useState, Fragment } from "react"
+import { useState, Fragment } from 'react'
 import blogService from '../services/blogs'
-import "./Blog.css"
+import './Blog.css'
 
 const Blog = ({ blog: { title, author, url, likes, id, user }, handleRemoveBlog }) => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -28,7 +28,7 @@ const Blog = ({ blog: { title, author, url, likes, id, user }, handleRemoveBlog 
 
   const handleRemoveClick = async () => {
     const choice = window.confirm(`Remove blog '${title} by ${author}'`)
-    
+
     if (choice) {
       try {
         await blogService.remove(id)

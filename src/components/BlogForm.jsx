@@ -1,5 +1,5 @@
-import React from "react"
-import { useState } from "react"
+import React from 'react'
+import { useState } from 'react'
 
 const BlogForm = ({ handleBlogSave }) => {
   const [title, setTitle] = useState('')
@@ -18,7 +18,6 @@ const BlogForm = ({ handleBlogSave }) => {
     setTitle('')
     setAuthor('')
     setUrl('')
-    
   }
 
   const handleTitleChange = (event) => {

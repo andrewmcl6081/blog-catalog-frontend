@@ -1,4 +1,4 @@
-import { useState, forwardRef, useImperativeHandle } from "react"
+import { useState, forwardRef, useImperativeHandle } from 'react'
 import PropTypes from 'prop-types'
 
 // Wrapping our func in the forwardRef func allows this component to
